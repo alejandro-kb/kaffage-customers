@@ -104,11 +104,11 @@ a:hover{color:var(--brown-900);border-color:var(--moss)}
 .mt__l{font-size:.72rem;color:var(--brown-300);text-transform:uppercase;letter-spacing:.05em;font-weight:500;margin-top:.15rem}
 
 /* Charts */
-.chart-bars{display:flex;align-items:flex-end;gap:clamp(.3rem,1.2vw,1rem);height:220px;padding:1rem 0;border-bottom:2px solid var(--brown-50)}
-.chart-bar{flex:1;display:flex;flex-direction:column;align-items:center;gap:.3rem}
-.chart-bar__fill{width:100%;max-width:60px;border-radius:3px 3px 0 0;position:relative;transition:height 1s cubic-bezier(.4,0,.2,1)}
-.chart-bar__fill span{position:absolute;top:-1.2rem;left:50%;transform:translateX(-50%);font-size:.7rem;font-weight:600;white-space:nowrap;color:var(--moss)}
-.chart-bar__label{font-size:.6rem;text-align:center;color:var(--brown-400);line-height:1.15;max-width:70px}
+.chart-bars{display:flex;align-items:flex-end;gap:clamp(.5rem,1.5vw,1.2rem);height:240px;padding:1.5rem 0;border-bottom:2px solid var(--brown-50)}
+.chart-bar{flex:1;display:flex;flex-direction:column;align-items:center;gap:.4rem}
+.chart-bar__fill{width:clamp(36px,6vw,65px);min-width:36px;border-radius:3px 3px 0 0;position:relative}
+.chart-bar__fill span{position:absolute;top:-1.4rem;left:50%;transform:translateX(-50%);font-size:.72rem;font-weight:700;white-space:nowrap;color:var(--moss)}
+.chart-bar__label{font-size:.62rem;text-align:center;color:var(--brown-400);line-height:1.2;max-width:75px}
 .fill-ctrl{background:var(--brown-100)}
 .fill-k{background:var(--moss-light)}
 .fill-kb{background:var(--sunlit-dark)}
@@ -160,9 +160,8 @@ tr.hr td{border-bottom:2px solid var(--sunlit)}
 @media(max-width:600px){.survey-bar{flex-direction:column;align-items:stretch}.survey-bar__label{text-align:left;min-width:auto}}
 
 /* Cert logos */
-.cert-row{display:flex;align-items:center;gap:clamp(1.5rem,3vw,3rem);flex-wrap:wrap;margin:1.5rem 0}
-.cert-row img{height:50px;width:auto;object-fit:contain;filter:grayscale(30%);opacity:.85;transition:.3s}
-.cert-row img:hover{filter:none;opacity:1}
+.cert-row{display:flex;align-items:center;gap:clamp(2rem,4vw,4rem);flex-wrap:wrap;margin:1.5rem 0;padding:1.5rem 0}
+.cert-row img{height:80px;width:auto;object-fit:contain}
 
 /* Image sections */
 .img-banner{width:100%;height:320px;object-fit:cover;margin:2rem 0}
@@ -321,11 +320,11 @@ tr.hr td{border-bottom:2px solid var(--sunlit)}
       <h3>In vivo SPF boost — up to +58%</h3>
       <p class="cap">ISO 24444:2019 · n=5/formulation · Phototypes I–III · Helioscience Laboratory · p&lt;0.05</p>
       <div class="chart-bars" id="spf-chart">
-        <div class="chart-bar"><div class="chart-bar__fill fill-ctrl" style="height:0" data-h="63%"><span>15.9</span></div><div class="chart-bar__label">Control</div></div>
-        <div class="chart-bar"><div class="chart-bar__fill fill-k" style="height:0" data-h="73%"><span>18.4</span></div><div class="chart-bar__label">1% KAFFAGE®</div></div>
-        <div class="chart-bar"><div class="chart-bar__fill fill-k" style="height:0" data-h="80%"><span>20.1</span></div><div class="chart-bar__label">2% KAFFAGE®</div></div>
-        <div class="chart-bar"><div class="chart-bar__fill fill-kb" style="height:0" data-h="100%"><span>25.1</span></div><div class="chart-bar__label">1% KAFFAGE-B®</div></div>
-        <div class="chart-bar"><div class="chart-bar__fill fill-kb" style="height:0" data-h="100%"><span>25.3</span></div><div class="chart-bar__label">2% KAFFAGE-B®</div></div>
+        <div class="chart-bar"><div class="chart-bar__fill fill-ctrl" style="height:63%"><span>15.9</span></div><div class="chart-bar__label">Control</div></div>
+        <div class="chart-bar"><div class="chart-bar__fill fill-k" style="height:73%"><span>18.4</span></div><div class="chart-bar__label">1% KAFFAGE®</div></div>
+        <div class="chart-bar"><div class="chart-bar__fill fill-k" style="height:80%"><span>20.1</span></div><div class="chart-bar__label">2% KAFFAGE®</div></div>
+        <div class="chart-bar"><div class="chart-bar__fill fill-kb" style="height:99%"><span>25.1</span></div><div class="chart-bar__label">1% KAFFAGE-B®</div></div>
+        <div class="chart-bar"><div class="chart-bar__fill fill-kb" style="height:100%"><span>25.3</span></div><div class="chart-bar__label">2% KAFFAGE-B®</div></div>
       </div>
       <div class="chart-legend"><span><i style="background:var(--brown-100)"></i> Control (ZnO)</span><span><i style="background:var(--moss-light)"></i> KAFFAGE®</span><span><i style="background:var(--sunlit-dark)"></i> KAFFAGE-B®</span></div>
     </div>
@@ -333,11 +332,11 @@ tr.hr td{border-bottom:2px solid var(--sunlit)}
       <h3>In vitro UVA-PF — up to +38%</h3>
       <p class="cap">PFUVA · Helioscience HelioTest™ 2 · ISO 24443:2021 inspired · n=16/sample</p>
       <div class="chart-bars" id="uva-chart">
-        <div class="chart-bar"><div class="chart-bar__fill fill-ctrl" style="height:0" data-h="72%"><span>10.2</span></div><div class="chart-bar__label">Control</div></div>
-        <div class="chart-bar"><div class="chart-bar__fill fill-k" style="height:0" data-h="77%"><span>10.8</span></div><div class="chart-bar__label">1% KAFFAGE®</div></div>
-        <div class="chart-bar"><div class="chart-bar__fill fill-k" style="height:0" data-h="86%"><span>12.1</span></div><div class="chart-bar__label">2% KAFFAGE®</div></div>
-        <div class="chart-bar"><div class="chart-bar__fill fill-kb" style="height:0" data-h="94%"><span>13.2</span></div><div class="chart-bar__label">1% KAFFAGE-B®</div></div>
-        <div class="chart-bar"><div class="chart-bar__fill fill-kb" style="height:0" data-h="100%"><span>14.1</span></div><div class="chart-bar__label">2% KAFFAGE-B®</div></div>
+        <div class="chart-bar"><div class="chart-bar__fill fill-ctrl" style="height:72%"><span>10.2</span></div><div class="chart-bar__label">Control</div></div>
+        <div class="chart-bar"><div class="chart-bar__fill fill-k" style="height:77%"><span>10.8</span></div><div class="chart-bar__label">1% KAFFAGE®</div></div>
+        <div class="chart-bar"><div class="chart-bar__fill fill-k" style="height:86%"><span>12.1</span></div><div class="chart-bar__label">2% KAFFAGE®</div></div>
+        <div class="chart-bar"><div class="chart-bar__fill fill-kb" style="height:94%"><span>13.2</span></div><div class="chart-bar__label">1% KAFFAGE-B®</div></div>
+        <div class="chart-bar"><div class="chart-bar__fill fill-kb" style="height:100%"><span>14.1</span></div><div class="chart-bar__label">2% KAFFAGE-B®</div></div>
       </div>
       <div class="chart-legend"><span><i style="background:var(--brown-100)"></i> Control</span><span><i style="background:var(--moss-light)"></i> KAFFAGE®</span><span><i style="background:var(--sunlit-dark)"></i> KAFFAGE-B®</span></div>
     </div>
@@ -422,12 +421,12 @@ tr.hr td{border-bottom:2px solid var(--sunlit)}
   <div class="g3 rv" style="margin-bottom:2rem">
     <div class="cd">
       <h4 style="font-family:var(--fb);font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--brown-300)">Recommended Dosage — Powder</h4>
-      <div style="font-family:var(--fd);font-size:1.4rem;color:var(--moss);margin:.3rem 0">0.5–3%</div>
-      <p style="font-size:.82rem;margin:0;color:var(--brown-400)">Serums & gels: 0.5–1% · Creams & lotions: 1–3%<br>Add to water phase; may pre-disperse in glycerin.</p>
+      <div style="font-family:var(--fd);font-size:1.4rem;color:var(--moss);margin:.3rem 0">1%</div>
+      <p style="font-size:.82rem;margin:0;color:var(--brown-400)">KAFFAGE® or KAFFAGE-B® (100% active)<br>Add to water phase; may pre-disperse in glycerin.</p>
     </div>
     <div class="cd">
       <h4 style="font-family:var(--fb);font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--brown-300)">Recommended Dosage — Liquid Dispersion</h4>
-      <div style="font-family:var(--fd);font-size:1.4rem;color:var(--moss);margin:.3rem 0">1.5–9%</div>
+      <div style="font-family:var(--fd);font-size:1.4rem;color:var(--moss);margin:.3rem 0">3%</div>
       <p style="font-size:.82rem;margin:0;color:var(--brown-400)">KAFFAGE-D® (30% active) or KAFFAGE-BD® (33% active)<br>Add directly to water phase. Cold-process compatible.</p>
     </div>
     <div class="cd">
@@ -602,10 +601,6 @@ window.addEventListener('scroll',()=>nav.classList.toggle('sc',scrollY>50));
 // Reveal on scroll
 const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');obs.unobserve(e.target)}})},{threshold:.08,rootMargin:'0px 0px -30px 0px'});
 document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
-
-// Animate bar charts on scroll
-const chartObs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.querySelectorAll('.chart-bar__fill').forEach((b,i)=>{setTimeout(()=>{b.style.height=b.dataset.h},i*80)});chartObs.unobserve(e.target)}})},{threshold:.3});
-document.querySelectorAll('.chart-bars').forEach(c=>chartObs.observe(c));
 
 // Animate survey bars on scroll
 const surveyObs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.querySelectorAll('.survey-bar__fill').forEach((b,i)=>{setTimeout(()=>{b.style.width=b.dataset.w},i*60)});surveyObs.unobserve(e.target)}})},{threshold:.2});
