@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KAFFAGE® — Melanoidin-Based Multifunctional Technology for Personal Care | Kaffe Bueno</title>
+<meta name="description" content="KAFFAGE® is the first melanoidin-based multifunctional technology for personal care. SPF booster, anti-ageing, hydration — one ingredient, clinically proven.">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Libre+Franklin:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+/* Night Moss base palette */
+--moss:#454424;--moss-light:#5a5c32;--moss-dark:#333318;
+/* Sunlit Ground */
+--sunlit:#e0c175;--sunlit-light:#eedaaa;--sunlit-dark:#c4a254;
+/* Earth in Bloom */
+--earth:#ee8a40;--earth-light:#f4a86d;
+/* Canopy Life */
+--canopy:#94aa4d;--canopy-light:#adc06a;
+/* Open Sky */
+--sky:#7eadcb;
+/* Warm neutrals */
+--cream:#faf6ef;--cream2:#fff9f1;--cream3:#f3ece0;--warm-white:#fffcf7;
+--brown-900:#1a0e08;--brown-800:#2c1810;--brown-700:#3e2723;--brown-600:#4e342e;
+--brown-500:#5d4037;--brown-400:#6d4c41;--brown-300:#8d6e63;--brown-200:#a1887f;
+--brown-100:#bcaaa4;--brown-50:#d7ccc8;
+--fd:'DM Serif Display',Georgia,serif;--fb:'Libre Franklin',sans-serif;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--fb);color:var(--brown-800);background:var(--cream);line-height:1.7;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+.ctn{max-width:1200px;margin:0 auto;padding:0 clamp(1.5rem,4vw,3rem)}
+.sec{padding:clamp(4rem,8vw,7rem) 0}
+.sec--a{background:var(--cream3)}
+.sec--d{background:var(--moss);color:var(--cream)}
+.sec--d h2,.sec--d h3{color:var(--sunlit)}
+.sec--d p,.sec--d li{color:var(--cream3)}
+.sec--warm{background:var(--brown-700);color:var(--cream)}
+.sec--warm h2{color:var(--sunlit-light)}
+h1,h2,h3,h4{font-family:var(--fd);font-weight:400;line-height:1.2}
+h1{font-size:clamp(2.5rem,5vw,4rem);color:var(--moss)}
+h2{font-size:clamp(1.8rem,3.2vw,2.6rem);color:var(--moss);margin-bottom:1.5rem}
+h3{font-size:clamp(1.15rem,1.8vw,1.5rem);color:var(--brown-600);margin-bottom:.75rem}
+p{margin-bottom:1rem;font-size:1rem;font-weight:300}
+.lead{font-size:clamp(1.05rem,1.5vw,1.2rem);color:var(--brown-400);line-height:1.65;max-width:48em}
+.ey{font-family:var(--fb);font-size:.7rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--canopy);margin-bottom:.5rem}
+.cap{font-size:.8rem;color:var(--brown-300);font-style:italic}
+strong{font-weight:600;color:var(--brown-700)}
+a{color:var(--moss);text-decoration:none;border-bottom:1px solid var(--sunlit);transition:.2s}
+a:hover{color:var(--brown-900);border-color:var(--moss)}
+.btn{display:inline-block;padding:.75rem 1.8rem;font-family:var(--fb);font-weight:600;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:.3s;border-bottom:none;text-align:center}
+.btn-p{background:var(--moss);color:var(--cream);border:2px solid var(--moss)}
+.btn-p:hover{background:var(--moss-light);border-color:var(--moss-light)}
+.btn-o{background:transparent;color:var(--moss);border:2px solid var(--moss)}
+.btn-o:hover{background:var(--moss);color:var(--cream)}
+.btn-w{background:var(--sunlit);color:var(--moss-dark);border:2px solid var(--sunlit)}
+.btn-w:hover{background:var(--sunlit-dark);border-color:var(--sunlit-dark);color:#fff}
+
+/* Nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:.8rem 0;transition:.4s}
+.nav.sc{background:rgba(250,246,239,.96);backdrop-filter:blur(10px);box-shadow:0 1px 15px rgba(0,0,0,.04)}
+.nav .ctn{display:flex;align-items:center;justify-content:space-between}
+.nav__l{font-family:var(--fb);font-weight:700;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;color:var(--moss);border:none}
+.nav__n{display:flex;gap:1.5rem;list-style:none}
+.nav__n a{font-size:.7rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--brown-500);border:none}
+.nav__n a:hover{color:var(--moss)}
+@media(max-width:768px){.nav__n{display:none}}
+
+/* Hero */
+.hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding-top:5rem;background:var(--cream);gap:2rem}
+.hero__txt{padding:clamp(2rem,4vw,4rem) clamp(1.5rem,4vw,3rem) clamp(2rem,4vw,4rem) clamp(1.5rem,6vw,6rem)}
+.hero__img{height:100vh;min-height:500px;overflow:hidden}
+.hero__img img{width:100%;height:100%;object-fit:cover}
+.hero__b{display:inline-block;padding:.3rem 1rem;background:var(--moss);color:var(--sunlit-light);font-size:.65rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-bottom:1.5rem}
+.hero h1{margin-bottom:1.2rem}
+.hero h1 em{font-style:italic;color:var(--canopy)}
+.hero__cta{display:flex;gap:.8rem;margin-top:1.8rem;flex-wrap:wrap}
+.hero__stats{display:flex;gap:clamp(1rem,2.5vw,2.5rem);margin-top:2.5rem;flex-wrap:wrap}
+.hst{text-align:left}
+.hst__v{font-family:var(--fd);font-size:2rem;color:var(--moss);line-height:1}
+.hst__l{font-size:.65rem;color:var(--brown-300);text-transform:uppercase;letter-spacing:.05em;margin-top:.1rem}
+@media(max-width:900px){.hero{grid-template-columns:1fr;min-height:auto}.hero__img{height:50vh;order:-1}.hero__txt{padding:2rem clamp(1.5rem,4vw,3rem)}}
+
+/* Grids */
+.g2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,24rem),1fr));gap:2.5rem;align-items:start}
+.g3{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,17rem),1fr));gap:1.5rem}
+.g4{display:grid;grid-template-columns:repeat(auto-fill,minmax(12.5rem,1fr));gap:1.2rem}
+
+/* Cards */
+.cd{background:#fff;padding:1.8rem;border:1px solid var(--brown-50);transition:.3s}
+.cd:hover{border-color:var(--sunlit);box-shadow:0 4px 24px rgba(69,68,36,.06)}
+.cd--h{border-left:3px solid var(--canopy);background:var(--cream2)}
+
+/* Problem cards */
+.pc{background:#fff;padding:1.6rem 1.6rem 1.6rem 2rem;border:1px solid var(--brown-50);position:relative}
+.pc::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%}
+.pc--a::before{background:var(--earth)}
+.pc--b::before{background:var(--sky)}
+.pc--c::before{background:var(--canopy)}
+
+/* Metrics */
+.mt{text-align:center;padding:1.2rem .8rem}
+.mt__v{font-family:var(--fd);font-size:clamp(2rem,3.2vw,2.8rem);color:var(--moss);line-height:1}
+.mt__l{font-size:.72rem;color:var(--brown-300);text-transform:uppercase;letter-spacing:.05em;font-weight:500;margin-top:.15rem}
+
+/* Charts */
+.chart-bars{display:flex;align-items:flex-end;gap:clamp(.3rem,1.2vw,1rem);height:220px;padding:1rem 0;border-bottom:2px solid var(--brown-50)}
+.chart-bar{flex:1;display:flex;flex-direction:column;align-items:center;gap:.3rem}
+.chart-bar__fill{width:100%;max-width:60px;border-radius:3px 3px 0 0;position:relative;transition:height 1s cubic-bezier(.4,0,.2,1)}
+.chart-bar__fill span{position:absolute;top:-1.2rem;left:50%;transform:translateX(-50%);font-size:.7rem;font-weight:600;white-space:nowrap;color:var(--moss)}
+.chart-bar__label{font-size:.6rem;text-align:center;color:var(--brown-400);line-height:1.15;max-width:70px}
+.fill-ctrl{background:var(--brown-100)}
+.fill-k{background:var(--moss-light)}
+.fill-kb{background:var(--sunlit-dark)}
+.chart-legend{display:flex;gap:1rem;margin-top:.6rem;font-size:.7rem;color:var(--brown-400);flex-wrap:wrap}
+.chart-legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:.3rem;vertical-align:middle}
+
+/* Tables */
+.tw{overflow-x:auto;margin:1.2rem 0;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-size:.82rem}
+thead{background:var(--moss);color:var(--cream)}
+th{padding:.65rem .7rem;text-align:left;font-weight:600;font-size:.67rem;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap}
+td{padding:.6rem .7rem;border-bottom:1px solid var(--brown-50);vertical-align:top}
+tr:nth-child(even){background:var(--cream3)}
+tr.hr{background:var(--cream2);font-weight:600}
+tr.hr td{border-bottom:2px solid var(--sunlit)}
+.ck{color:var(--canopy);font-weight:700}
+.da{color:var(--brown-100)}
+
+/* Accordion */
+.acc{border-top:1px solid var(--brown-50)}
+.acc__i{border-bottom:1px solid var(--brown-50)}
+.acc__b{width:100%;display:flex;justify-content:space-between;align-items:center;padding:1rem 0;background:none;border:none;cursor:pointer;font-family:var(--fd);font-size:1.05rem;color:var(--moss);text-align:left}
+.acc__b::after{content:'+';font-family:var(--fb);font-size:1.2rem;color:var(--brown-200);transition:transform .3s}
+.acc__b.on::after{transform:rotate(45deg);color:var(--canopy)}
+.acc__c{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.acc__c__in{padding:0 0 1.5rem}
+
+/* Compatibility badges */
+.cbadge{display:inline-flex;align-items:center;gap:.2rem;padding:.2rem .5rem;font-size:.68rem;font-weight:500;border-radius:2px;margin:.1rem}
+.cbadge--ok{background:#e8f5e9;color:#2e7d32}
+.cbadge--warn{background:#fff3e0;color:#bf360c}
+.cbadge--no{background:#ffebee;color:#c62828}
+
+/* Product cards */
+.pr{background:#fff;padding:1.3rem;border:1px solid var(--brown-50);text-align:center}
+.pr__name{font-family:var(--fd);font-size:1.05rem;color:var(--moss);margin-bottom:.3rem}
+.pr__form{display:inline-block;padding:.15rem .6rem;font-size:.6rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;margin-bottom:.5rem}
+.pr__form--p{background:var(--cream3);color:var(--brown-500)}
+.pr__form--l{background:var(--sunlit-light);color:var(--moss)}
+.pr__desc{font-size:.82rem;color:var(--brown-400);line-height:1.45}
+
+/* Survey results */
+.survey-bar{display:flex;align-items:center;gap:.8rem;margin-bottom:.6rem}
+.survey-bar__label{font-size:.82rem;color:var(--brown-600);min-width:160px;text-align:right}
+.survey-bar__track{flex:1;height:22px;background:var(--cream3);border-radius:2px;overflow:hidden;position:relative}
+.survey-bar__fill{height:100%;border-radius:2px;transition:width 1s cubic-bezier(.4,0,.2,1);display:flex;align-items:center;justify-content:flex-end;padding-right:.5rem;font-size:.7rem;font-weight:600;color:#fff}
+.survey-bar__fill--k{background:var(--moss-light)}
+.survey-bar__fill--kb{background:var(--sunlit-dark)}
+@media(max-width:600px){.survey-bar{flex-direction:column;align-items:stretch}.survey-bar__label{text-align:left;min-width:auto}}
+
+/* Cert logos */
+.cert-row{display:flex;align-items:center;gap:clamp(1.5rem,3vw,3rem);flex-wrap:wrap;margin:1.5rem 0}
+.cert-row img{height:50px;width:auto;object-fit:contain;filter:grayscale(30%);opacity:.85;transition:.3s}
+.cert-row img:hover{filter:none;opacity:1}
+
+/* Image sections */
+.img-banner{width:100%;height:320px;object-fit:cover;margin:2rem 0}
+.img-float{border-radius:0;margin-bottom:1.5rem}
+
+/* Divider */
+.dv{width:50px;height:2px;background:var(--sunlit);margin:1.5rem 0}
+
+/* Reveal */
+.rv{opacity:0;transform:translateY(20px);transition:all .7s cubic-bezier(.4,0,.2,1)}
+.rv.vis{opacity:1;transform:translateY(0)}
+.rd1{transition-delay:.1s}.rd2{transition-delay:.2s}.rd3{transition-delay:.3s}
+
+/* Natural badge */
+.nat-badge{display:inline-flex;align-items:center;gap:.4rem;padding:.4rem 1rem;border:1.5px solid var(--canopy);color:var(--canopy);font-size:.7rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:1rem}
+
+/* Footer */
+.ft{background:var(--moss-dark);color:var(--brown-100);padding:3rem 0 1.5rem}
+.ft a{color:var(--sunlit-light);border-color:transparent}
+.ft a:hover{color:#fff}
+.ft__g{display:grid;grid-template-columns:2fr 1fr 1fr;gap:2rem;margin-bottom:2rem;align-items:start}
+.ft__b{border-top:1px solid rgba(255,255,255,.1);padding-top:1rem;font-size:.7rem;color:rgba(255,255,255,.4);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.ft__b img{height:36px;opacity:.6}
+@media(max-width:768px){.ft__g{grid-template-columns:1fr}}
+
+/* Ref list */
+.rl{font-size:.72rem;color:var(--brown-300);line-height:1.5;list-style:none;columns:2;column-gap:2rem}
+.rl li{margin-bottom:.25rem;break-inside:avoid}
+@media(max-width:768px){.rl{columns:1}}
+
+@media print{.nav,.hero__cta,.ft{display:none}.sec{padding:2rem 0}}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+<div class="ctn">
+  <a href="#" class="nav__l">KAFFE BUENO</a>
+  <ul class="nav__n">
+    <li><a href="#problem">Why Now</a></li>
+    <li><a href="#science">Science</a></li>
+    <li><a href="#data">Evidence</a></li>
+    <li><a href="#benchmark">Benchmark</a></li>
+    <li><a href="#formulation">Formulate</a></li>
+    <li><a href="#regulatory">Regulatory</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div>
+</nav>
+
+<!-- ════════ HERO ════════ -->
+<section class="hero">
+  <div class="hero__txt">
+    <div class="hero__b">Patent-Protected · Upcycled · Clinically Proven</div>
+    <h1>One ingredient to boost SPF, fight ageing &amp; hydrate — <em>naturally</em></h1>
+    <p class="lead">KAFFAGE® is the world's first industrialised melanoidin technology. A multifunctional, water-soluble, 100% natural biopolymer that replaces multiple actives in suncare and skincare — at just 1% inclusion.</p>
+    <div class="nat-badge">🌿 100% Natural Origin</div>
+    <div class="hero__cta">
+      <a href="#data" class="btn btn-p">See the clinical evidence</a>
+      <a href="#contact" class="btn btn-o">Book a meeting</a>
+    </div>
+    <div class="hero__stats">
+      <div class="hst"><div class="hst__v">+58%</div><div class="hst__l">SPF Boost (in vivo)</div></div>
+      <div class="hst"><div class="hst__v">−12%</div><div class="hst__l">Wrinkle Depth</div></div>
+      <div class="hst"><div class="hst__v">+51%</div><div class="hst__l">Hydration (15 min)</div></div>
+      <div class="hst"><div class="hst__v">+29%</div><div class="hst__l">Hydration (10 hrs)</div></div>
+    </div>
+  </div>
+  <div class="hero__img">
+    <img src="assets/hero-model.webp" alt="KAFFAGE cream application on skin" loading="eager">
+  </div>
+</section>
+
+<!-- ════════ WHY NOW ════════ -->
+<section class="sec sec--a" id="problem">
+<div class="ctn">
+  <div class="ey rv">The market challenge</div>
+  <h2 class="rv">Three problems your current ingredients can't solve together</h2>
+  <p class="lead rv" style="margin-bottom:2rem">Formulators face converging pressures. Existing SPF boosters solve one problem but create others. <strong>Multifunctional = formulation problem-solver.</strong></p>
+  <div class="g3">
+    <div class="pc pc--a rv">
+      <h4 style="font-family:var(--fd);color:var(--earth)">Greasy SPF formulas</h4>
+      <p style="font-size:.88rem;color:var(--brown-400);margin:0">Today's leading SPF boosters are oil-phase esters. Higher SPF = greasier texture. Consumers rank greasiness as the #1 reason they skip sunscreen. <strong>KAFFAGE® is water-soluble</strong> — it boosts SPF by 58% at 1% without adding any oiliness.</p>
+    </div>
+    <div class="pc pc--b rv rd1">
+      <h4 style="font-family:var(--fd);color:var(--sky)">White cast from mineral filters</h4>
+      <p style="font-size:.88rem;color:var(--brown-400);margin:0">Consumers distrust chemical UV filters. Brands are shifting to ZnO/TiO₂ — but mineral means white cast, especially on deeper skin tones. <strong>KAFFAGE® naturally tints the formulation</strong>, eliminating white cast while boosting protection.</p>
+    </div>
+    <div class="pc pc--c rv rd2">
+      <h4 style="font-family:var(--fd);color:var(--canopy)">Too many single-function actives</h4>
+      <p style="font-size:.88rem;color:var(--brown-400);margin:0">Formulators juggle 8–12 ingredients per SKU. Each adds cost, stability risk, and complexity. <strong>KAFFAGE® delivers SPF boosting + antioxidant + anti-ageing + hydration + tone correction</strong> in one water-soluble active at 1%. One ingredient, five functions — true multifunctionality that simplifies your formula.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ════════ White cast image banner ════════ -->
+<img src="assets/model-cream.jpg" alt="Cream application showing natural skin tone" class="img-banner" loading="lazy" style="margin:0">
+
+<!-- ════════ SCIENCE ════════ -->
+<section class="sec" id="science">
+<div class="ctn">
+  <div class="g2">
+    <div>
+      <div class="ey rv">The Ingredient</div>
+      <h2 class="rv">Melanoidins — a new class of cosmetic active</h2>
+      <div class="dv rv"></div>
+      <p class="rv">Melanoidins are <strong>high-molecular-weight (200 Da – 300 kDa), water-soluble, nitrogen-containing biopolymers</strong> formed naturally during coffee roasting through the Maillard reaction.</p>
+      <p class="rv">Their macromolecular backbone incorporates <strong>galactomannans, arabinogalactan-proteins, and chlorogenic acid derivatives</strong> (caffeic acid, ferulic acid). Phenolic, carbonyl, and amino functional groups give them anionic and amphiphilic character, potent antioxidant capacity, and metal chelation ability.</p>
+      <p class="rv">Melanoidins constitute ~25–28% of roasted coffee bean dry weight. Kaffe Bueno is the <strong>first and only company globally to industrialise melanoidins</strong> for cosmetic use.</p>
+      <p class="rv">Despite the novelty of the ingredient, we chose a <strong>clean, widely accepted INCI name</strong> — <em>Coffea Arabica Seed Extract</em> — for maximum regulatory compatibility and consumer acceptance across all markets.</p>
+      <p class="rv">Our patented process (<a href="https://patents.google.com/patent/WO2021130349A1/en" target="_blank">WO2021130349A1</a>) isolates defined molecular weight fractions via alkaline aqueous extraction + MW fractionation — making melanoidins a <em>programmable</em> molecule with tuneable performance.</p>
+    </div>
+    <div>
+      <img src="assets/kaffage-product.jpg" alt="KAFFAGE product branding" class="img-float rv" loading="lazy" style="margin-bottom:1.5rem">
+      <div class="cd cd--h rv">
+        <div class="ey">Mechanism of Action</div>
+        <h3 style="font-size:1.1rem">Antioxidant-mediated biological photoprotection</h3>
+        <p style="font-size:.85rem">The SPF-boosting mechanism operates through biological pathways — <strong>not UV filtration</strong>.</p>
+        <p style="font-size:.82rem"><strong>1. Radical scavenging</strong> — DPPH, ABTS, FRAP, ORAC activity [1,2,3]</p>
+        <p style="font-size:.82rem"><strong>2. Metal chelation</strong> — Binds Fe²⁺, Fe³⁺, Cu²⁺, preventing Fenton-type ROS amplification [4,5]</p>
+        <p style="font-size:.82rem"><strong>3. Chain-breaking</strong> — Hydrogen donation interrupts lipid peroxidation [6]</p>
+        <p style="font-size:.82rem"><strong>4. NF-κB / Nrf2 modulation</strong> — Suppresses pro-inflammatory cytokines [9,10,11]</p>
+        <p style="font-size:.78rem;color:var(--brown-300);margin:1rem 0 0;border-top:1px solid var(--brown-50);padding-top:.8rem">Since SPF is measured by erythema (an inflammatory endpoint), ingredients that quench UV-induced ROS raise the Minimal Erythemal Dose — boosting SPF without acting as a UV filter. Same mechanism validated for vitamin E, ferulic acid, and Polypodium leucotomos [7,12].</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ════════ PRODUCT RANGE ════════ -->
+<section class="sec sec--a">
+<div class="ctn">
+  <div class="ey rv">Product Range</div>
+  <h2 class="rv">Four formats, one technology platform</h2>
+  <p class="lead rv" style="margin-bottom:1.5rem">Powder for flexibility, liquid dispersion for ease of use. Choose the grade that fits your application.</p>
+  <div class="g4 rv">
+    <div class="pr"><div class="pr__name">KAFFAGE®</div><div class="pr__form pr__form--p">Powder</div><div class="pr__desc">Dark brown. 100% active. Highest antioxidant & anti-glycation power. Best for anti-ageing & radiance.</div></div>
+    <div class="pr"><div class="pr__name">KAFFAGE-D®</div><div class="pr__form pr__form--l">Liquid</div><div class="pr__desc">30% active in glycerin. Same performance, easier cold-process incorporation.</div></div>
+    <div class="pr"><div class="pr__name">KAFFAGE-B®</div><div class="pr__form pr__form--p">Powder</div><div class="pr__desc">Beige. 100% active. Strongest SPF & UVA-PF boost. Best for suncare & tinted products.</div></div>
+    <div class="pr"><div class="pr__name">KAFFAGE-BD®</div><div class="pr__form pr__form--l">Liquid</div><div class="pr__desc">33% active KAFFAGE-B in glycerin. Pre-dispersed for effortless suncare formulation.</div></div>
+  </div>
+</div>
+</section>
+
+<!-- ════════ CLINICAL DATA ════════ -->
+<section class="sec" id="data">
+<div class="ctn">
+  <div class="ey rv">Clinical Evidence</div>
+  <h2 class="rv">In vivo &amp; in vitro data — generated on KAFFAGE®</h2>
+  <p class="lead rv" style="margin-bottom:2rem">All data below is from studies conducted on our ingredient — not generic literature extrapolation.</p>
+
+  <!-- SPF CHART + TABLE -->
+  <div class="g2 rv" style="margin-bottom:2.5rem">
+    <div>
+      <h3>In vivo SPF boost — up to +58%</h3>
+      <p class="cap">ISO 24444:2019 · n=5/formulation · Phototypes I–III · Helioscience Laboratory · p&lt;0.05</p>
+      <div class="chart-bars" id="spf-chart">
+        <div class="chart-bar"><div class="chart-bar__fill fill-ctrl" style="height:0" data-h="63%"><span>15.9</span></div><div class="chart-bar__label">Control</div></div>
+        <div class="chart-bar"><div class="chart-bar__fill fill-k" style="height:0" data-h="73%"><span>18.4</span></div><div class="chart-bar__label">1% KAFFAGE®</div></div>
+        <div class="chart-bar"><div class="chart-bar__fill fill-k" style="height:0" data-h="80%"><span>20.1</span></div><div class="chart-bar__label">2% KAFFAGE®</div></div>
+        <div class="chart-bar"><div class="chart-bar__fill fill-kb" style="height:0" data-h="100%"><span>25.1</span></div><div class="chart-bar__label">1% KAFFAGE-B®</div></div>
+        <div class="chart-bar"><div class="chart-bar__fill fill-kb" style="height:0" data-h="100%"><span>25.3</span></div><div class="chart-bar__label">2% KAFFAGE-B®</div></div>
+      </div>
+      <div class="chart-legend"><span><i style="background:var(--brown-100)"></i> Control (ZnO)</span><span><i style="background:var(--moss-light)"></i> KAFFAGE®</span><span><i style="background:var(--sunlit-dark)"></i> KAFFAGE-B®</span></div>
+    </div>
+    <div>
+      <h3>In vitro UVA-PF — up to +38%</h3>
+      <p class="cap">PFUVA · Helioscience HelioTest™ 2 · ISO 24443:2021 inspired · n=16/sample</p>
+      <div class="chart-bars" id="uva-chart">
+        <div class="chart-bar"><div class="chart-bar__fill fill-ctrl" style="height:0" data-h="72%"><span>10.2</span></div><div class="chart-bar__label">Control</div></div>
+        <div class="chart-bar"><div class="chart-bar__fill fill-k" style="height:0" data-h="77%"><span>10.8</span></div><div class="chart-bar__label">1% KAFFAGE®</div></div>
+        <div class="chart-bar"><div class="chart-bar__fill fill-k" style="height:0" data-h="86%"><span>12.1</span></div><div class="chart-bar__label">2% KAFFAGE®</div></div>
+        <div class="chart-bar"><div class="chart-bar__fill fill-kb" style="height:0" data-h="94%"><span>13.2</span></div><div class="chart-bar__label">1% KAFFAGE-B®</div></div>
+        <div class="chart-bar"><div class="chart-bar__fill fill-kb" style="height:0" data-h="100%"><span>14.1</span></div><div class="chart-bar__label">2% KAFFAGE-B®</div></div>
+      </div>
+      <div class="chart-legend"><span><i style="background:var(--brown-100)"></i> Control</span><span><i style="background:var(--moss-light)"></i> KAFFAGE®</span><span><i style="background:var(--sunlit-dark)"></i> KAFFAGE-B®</span></div>
+    </div>
+  </div>
+
+  <!-- ANTI-AGEING METRICS -->
+  <h3 class="rv">Anti-ageing &amp; hydration — GCP-certified clinical trial</h3>
+  <p class="cap rv">Ref. INF.1424.92.10 · GCP (ICH E6) · ISO 9001:2015 · n=60 · Ages 35–55 · 28 days · Bionos Biotech · p&lt;0.05</p>
+  <div class="g4 rv" style="margin:1.5rem 0 2rem">
+    <div class="mt"><div class="mt__v">−12%</div><div class="mt__l">Wrinkle Depth</div><p class="cap" style="margin-top:.2rem">p&lt;0.015</p></div>
+    <div class="mt"><div class="mt__v">+15.1%</div><div class="mt__l">Skin Firmness</div><p class="cap" style="margin-top:.2rem">p&lt;0.001</p></div>
+    <div class="mt"><div class="mt__v">+19%</div><div class="mt__l">Skin Elasticity</div><p class="cap" style="margin-top:.2rem">p&lt;0.015</p></div>
+    <div class="mt"><div class="mt__v">+50.9%</div><div class="mt__l">Hydration (15 min)</div><p class="cap" style="margin-top:.2rem">+29.1% at 10 hrs</p></div>
+  </div>
+
+  <div class="tw rv">
+    <table>
+      <thead><tr><th>Parameter</th><th>1% KAFFAGE® vs Placebo</th><th>Significance</th><th>1% KAFFAGE-B® vs Placebo</th><th>Significance</th></tr></thead>
+      <tbody>
+        <tr><td>Wrinkle Depth</td><td>Better</td><td>Highly Significant</td><td>NS</td><td>Not significant</td></tr>
+        <tr><td>Skin Firmness</td><td>+4.0% better</td><td>Highly Significant</td><td>+6.9% better</td><td>Extremely Significant</td></tr>
+        <tr><td>Skin Elasticity</td><td>+19.0% better</td><td>Highly Significant</td><td>+13.9% better</td><td>Significant</td></tr>
+        <tr><td>Hydration (Day 14)</td><td>+18.8% better</td><td>p=0.018</td><td>Similar</td><td>—</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- USER SURVEY -->
+  <div style="margin-top:3rem" class="rv">
+    <div class="g2" style="align-items:center">
+      <div>
+        <h3>What users felt — post-use consumer survey (28 days)</h3>
+        <p class="cap" style="margin-bottom:1.5rem">Face serum with KAFFAGE-D® · Same clinical study panel · Self-assessment</p>
+        <div class="survey-bar"><div class="survey-bar__label">Skin feels softer</div><div class="survey-bar__track"><div class="survey-bar__fill survey-bar__fill--k" style="width:0" data-w="95%">95%</div></div></div>
+        <div class="survey-bar"><div class="survey-bar__label">Skin feels hydrated</div><div class="survey-bar__track"><div class="survey-bar__fill survey-bar__fill--k" style="width:0" data-w="93%">93%</div></div></div>
+        <div class="survey-bar"><div class="survey-bar__label">More supple & nourished</div><div class="survey-bar__track"><div class="survey-bar__fill survey-bar__fill--k" style="width:0" data-w="90%">90%</div></div></div>
+        <div class="survey-bar"><div class="survey-bar__label">Smoother contour</div><div class="survey-bar__track"><div class="survey-bar__fill survey-bar__fill--k" style="width:0" data-w="88%">88%</div></div></div>
+        <div class="survey-bar"><div class="survey-bar__label">Skin looks younger</div><div class="survey-bar__track"><div class="survey-bar__fill survey-bar__fill--k" style="width:0" data-w="85%">85%</div></div></div>
+        <div class="survey-bar"><div class="survey-bar__label">Firmer skin</div><div class="survey-bar__track"><div class="survey-bar__fill survey-bar__fill--k" style="width:0" data-w="83%">83%</div></div></div>
+        <div class="survey-bar"><div class="survey-bar__label">Even skin tone</div><div class="survey-bar__track"><div class="survey-bar__fill survey-bar__fill--k" style="width:0" data-w="85%">85%</div></div></div>
+      </div>
+      <div>
+        <img src="assets/model-drops.jpg" alt="Skincare serum drops on skin" loading="lazy" style="width:100%">
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ════════ BENCHMARK ════════ -->
+<section class="sec sec--a" id="benchmark">
+<div class="ctn">
+  <div class="ey rv">Competitive Landscape</div>
+  <h2 class="rv">How melanoidins compare to existing ingredient classes</h2>
+  <p class="lead rv" style="margin-bottom:1.5rem">No other single ingredient delivers this breadth of clinically proven benefits.</p>
+  <div class="tw rv">
+    <table>
+      <thead><tr><th>Active Class</th><th>Use Level</th><th>SPF Boost</th><th>UVA-PF</th><th>Hydration</th><th>Firmness</th><th>Wrinkle Δ</th><th>Day-Safe</th><th>Multi-Func.</th></tr></thead>
+      <tbody>
+        <tr class="hr"><td><strong>Melanoidins (KAFFAGE-BD®)</strong></td><td>1%</td><td><strong>+58–59%</strong></td><td><strong>+30%</strong></td><td><strong>+29.6%</strong></td><td><strong>+15.1%</strong></td><td><strong>−12.4%</strong></td><td class="ck">✓</td><td class="ck">✓</td></tr>
+        <tr><td>Polymeric Film Formers</td><td>1–3%</td><td>+20–40%</td><td>+10–25%</td><td class="da">—</td><td class="da">—</td><td class="da">—</td><td class="ck">✓</td><td class="da">—</td></tr>
+        <tr><td>Oil-Phase Optimizers</td><td>2–5%</td><td>+15–35%</td><td>0–20%</td><td class="da">—</td><td class="da">—</td><td class="da">—</td><td class="ck">✓</td><td class="da">—</td></tr>
+        <tr><td>Rheology Modifiers</td><td>0.2–1%</td><td>+10–30%</td><td>0–10%</td><td class="da">—</td><td class="da">—</td><td class="da">—</td><td class="ck">✓</td><td class="da">—</td></tr>
+        <tr><td>Hyaluronic Acid</td><td>0.1–0.5%</td><td class="da">—</td><td class="da">—</td><td>+20–30%</td><td>+5–10%</td><td class="da">—</td><td class="ck">✓</td><td class="da">—</td></tr>
+        <tr><td>Retinoids</td><td>0.1–1%</td><td class="da">—</td><td class="da">—</td><td>+5%</td><td>+15–25%</td><td>−15–30%</td><td class="da">No</td><td class="da">—</td></tr>
+        <tr><td>Peptides</td><td>1–3%</td><td class="da">—</td><td class="da">—</td><td>+10–15%</td><td>+10–20%</td><td>−10–20%</td><td class="ck">✓</td><td class="da">—</td></tr>
+        <tr><td>Niacinamide</td><td>2–5%</td><td class="da">—</td><td class="da">—</td><td>+10–20%</td><td>+5–10%</td><td>−5–10%</td><td class="ck">✓</td><td class="da">—</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="cap rv">Sources: Published supplier data, peer-reviewed dermatology publications, ISO standard testing. KAFFAGE® data from internal clinical studies.</p>
+</div>
+</section>
+
+<!-- ════════ FORMULATION ════════ -->
+<section class="sec" id="formulation">
+<div class="ctn">
+  <div class="ey rv">For Formulators</div>
+  <h2 class="rv">Simple to formulate, hard to replace</h2>
+  <p class="lead rv" style="margin-bottom:1.5rem">Water-soluble, cold-processable, compatible with standard cosmetic systems. Add to water phase — done.</p>
+
+  <div class="g3 rv" style="margin-bottom:2rem">
+    <div class="cd">
+      <h4 style="font-family:var(--fb);font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--brown-300)">Recommended Dosage — Powder</h4>
+      <div style="font-family:var(--fd);font-size:1.4rem;color:var(--moss);margin:.3rem 0">0.5–3%</div>
+      <p style="font-size:.82rem;margin:0;color:var(--brown-400)">Serums & gels: 0.5–1% · Creams & lotions: 1–3%<br>Add to water phase; may pre-disperse in glycerin.</p>
+    </div>
+    <div class="cd">
+      <h4 style="font-family:var(--fb);font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--brown-300)">Recommended Dosage — Liquid Dispersion</h4>
+      <div style="font-family:var(--fd);font-size:1.4rem;color:var(--moss);margin:.3rem 0">1.5–9%</div>
+      <p style="font-size:.82rem;margin:0;color:var(--brown-400)">KAFFAGE-D® (30% active) or KAFFAGE-BD® (33% active)<br>Add directly to water phase. Cold-process compatible.</p>
+    </div>
+    <div class="cd">
+      <h4 style="font-family:var(--fb);font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--brown-300)">Processing & pH</h4>
+      <div style="font-family:var(--fd);font-size:1.4rem;color:var(--moss);margin:.3rem 0">pH 4.5–7.5 · ≤100°C</div>
+      <p style="font-size:.82rem;margin:0;color:var(--brown-400)">Anionic biopolymer. Stable under cosmetic processing conditions (short heat exposure).</p>
+    </div>
+  </div>
+
+  <div class="g2 rv">
+    <div>
+      <h3>Compatibility at a glance</h3>
+      <div style="margin-top:.8rem">
+        <p style="font-size:.85rem"><span class="cbadge cbadge--ok">✓ Compatible</span> Non-ionic surfactants & emulsifiers</p>
+        <p style="font-size:.85rem"><span class="cbadge cbadge--ok">✓ Compatible</span> Anionic surfactants & polymers</p>
+        <p style="font-size:.85rem"><span class="cbadge cbadge--ok">✓ Compatible</span> Xanthan gum, Carbomers (at cosmetic pH)</p>
+        <p style="font-size:.85rem"><span class="cbadge cbadge--ok">✓ Compatible</span> Mineral UV filters (ZnO, TiO₂)</p>
+        <p style="font-size:.85rem"><span class="cbadge cbadge--warn">⚠ Caution</span> Strong electrolytes (may affect solubility)</p>
+        <p style="font-size:.85rem"><span class="cbadge cbadge--no">✗ Avoid</span> Cationic polymers, polyquats, cationic guar</p>
+      </div>
+    </div>
+    <div>
+      <h3>Colour performance</h3>
+      <p style="font-size:.88rem">KAFFAGE® naturally tints formulations — <strong>this is a feature, not a bug</strong>. At typical use levels (1–3%), the colour:</p>
+      <p style="font-size:.88rem">→ <strong>Eliminates white cast</strong> in mineral sunscreens<br>→ Provides a <strong>healthy, skin-matching glow</strong><br>→ <strong>Does not stain skin</strong> at recommended levels<br>→ Rinses off easily with water</p>
+      <p style="font-size:.85rem;color:var(--brown-400)">The colour is <strong>photostable</strong> — tested at an equivalent of 6 months indoor light exposure with no degradation observed.</p>
+      <p style="font-size:.82rem;color:var(--brown-300)">KAFFAGE® is an active ingredient with inherent colour — not a pigment.</p>
+    </div>
+  </div>
+
+  <div style="margin-top:2rem" class="rv">
+    <h3>Recommended applications</h3>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Application</th><th>Recommended Grade</th><th>Key Benefit</th></tr></thead>
+        <tbody>
+          <tr><td>Suncare (SPF boosting)</td><td>KAFFAGE-B® / KAFFAGE-BD®</td><td>+58% SPF, UVA-PF boost, white cast removal</td></tr>
+          <tr><td>Anti-ageing creams & serums</td><td>KAFFAGE® / KAFFAGE-D®</td><td>Anti-glycation, wrinkle reduction, firmness</td></tr>
+          <tr><td>BB & tinted moisturizers</td><td>KAFFAGE-B® / KAFFAGE-BD®</td><td>Tone unification, SPF boost, hydration</td></tr>
+          <tr><td>Hydrating day creams</td><td>KAFFAGE® / KAFFAGE-D®</td><td>+51% immediate hydration, 10+ hr retention</td></tr>
+          <tr><td>Eye care</td><td>KAFFAGE® / KAFFAGE-D®</td><td>Anti-fatigue, tone correction, firmness</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ════════ BB creams visual ════════ -->
+<img src="assets/bb-creams.webp" alt="BB cream and tinted moisturizer products" class="img-banner" loading="lazy" style="margin:0;height:240px">
+
+<!-- ════════ REGULATORY ════════ -->
+<section class="sec sec--a" id="regulatory">
+<div class="ctn">
+  <div class="g2">
+    <div class="rv">
+      <div class="ey">Regulatory & Certifications</div>
+      <h2>Globally compliant, naturally certified</h2>
+      <div class="dv"></div>
+      <div class="cert-row">
+        <img src="assets/cosmos.png" alt="ECOCERT COSMOS Approved">
+        <img src="assets/natrue.png" alt="NATRUE Approved">
+      </div>
+      <div class="tw">
+        <table>
+          <thead><tr><th>Region</th><th>Framework</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>Europe (EU)</td><td>EC 1223/2009 – COSING</td><td class="ck">✓ Listed (Potassium Coffeeate)</td></tr>
+            <tr><td>USA</td><td>FDA Cosmetic Guidelines</td><td class="ck">✓ Compliant</td></tr>
+            <tr><td>China</td><td>IECIC</td><td class="ck">✓ Listed (121210-09195-7295)</td></tr>
+            <tr><td>Japan</td><td>Standards for Cosmetics</td><td class="ck">✓ Compliant</td></tr>
+            <tr><td>Canada</td><td>Cosmetic Ingredient Hotlist</td><td class="ck">✓ Compliant</td></tr>
+            <tr><td>ASEAN</td><td>ASEAN Cosmetic Directive</td><td class="ck">✓ Compliant</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="rv rd1">
+      <h3 style="margin-top:1.5rem">Supply & Packaging</h3>
+      <p style="font-size:.9rem"><strong>Powder grades</strong> (KAFFAGE®, KAFFAGE-B®): 10 kg bags</p>
+      <p style="font-size:.9rem"><strong>Liquid grades</strong> (KAFFAGE-D®, KAFFAGE-BD®): 5 kg sealed buckets</p>
+      <p style="font-size:.9rem">Shelf life: 24 months unopened · Store 15–25°C, sealed, away from light</p>
+      <div style="margin-top:2rem">
+        <h3>100% upcycled origin</h3>
+        <p style="font-size:.9rem">KAFFAGE® is extracted from defatted spent coffee grounds — a waste stream from coffee oil production. No additional crops. No deforestation. No virgin raw materials.</p>
+        <p style="font-size:.9rem">Every kilogram produced diverts coffee by-products from landfill. Manufactured in <strong>Copenhagen, Denmark</strong>.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ════════ REFERENCES ════════ -->
+<section class="sec">
+<div class="ctn">
+  <div class="acc rv">
+    <div class="acc__i">
+      <button class="acc__b" onclick="tog(this)">Scientific References</button>
+      <div class="acc__c"><div class="acc__c__in">
+        <ol class="rl">
+          <li>[1] Delgado-Andrade et al. (2005). J. Agric. Food Chem., 53(20), 7832–7836. <a href="https://pubmed.ncbi.nlm.nih.gov/16190638/" target="_blank">PubMed</a></li>
+          <li>[2] Moreira et al. (2012). Food Funct., 3(9), 903–915. <a href="https://pubmed.ncbi.nlm.nih.gov/22584883/" target="_blank">PubMed</a></li>
+          <li>[3] Langner & Rzeski (2014). Int. J. Food Prop., 17(2), 344–353. <a href="https://www.tandfonline.com/doi/full/10.1080/10942912.2011.631253" target="_blank">Full text</a></li>
+          <li>[4] Rufián-Henares & de la Cueva (2009). J. Agric. Food Chem., 57(2), 432–438. <a href="https://pubmed.ncbi.nlm.nih.gov/19123814/" target="_blank">PubMed</a></li>
+          <li>[5] Nunes & Coimbra (2007). J. Agric. Food Chem., 55(10), 3967–3977.</li>
+          <li>[6] Morales (2005). Anal. Chim. Acta, 534(1), 171–176.</li>
+          <li>[7] Gomes-Rochette et al. (2023). Antioxidants, 12(1), 138. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9854756/" target="_blank">PMC</a></li>
+          <li>[8] Iriondo-DeHond et al. (2021). Front. Nutr., 8, 730343. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8545818/" target="_blank">PMC</a></li>
+          <li>[9] Chen & Chu (2012). Food Sci. Technol. Int., 20(4), 263–271. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3967769/" target="_blank">PMC</a></li>
+          <li>[10] Alves et al. (2022). Front. Nutr., 9, 825584. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8870621/" target="_blank">PMC</a></li>
+          <li>[11] Funakoshi-Tago et al. (2020). Sci. Rep., 10, 2584. <a href="https://www.nature.com/articles/s41598-020-59380-x" target="_blank">Nature</a></li>
+          <li>[12] Gonzalez et al. (2022). Front. Med., 9, 869175. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9008233/" target="_blank">PMC</a></li>
+        </ol>
+        <p style="font-size:.75rem;color:var(--brown-300);margin-top:.8rem">Patent: <a href="https://patents.google.com/patent/WO2021130349A1/en" target="_blank">WO2021130349A1</a> — Cosmetic compositions comprising melanoidins (Kaffe Bueno ApS)</p>
+      </div></div>
+    </div>
+    <div class="acc__i">
+      <button class="acc__b" onclick="tog(this)">Internal Study Credentials</button>
+      <div class="acc__c"><div class="acc__c__in">
+        <p style="font-size:.85rem"><strong>SPF & UVA Testing:</strong> Helioscience Laboratory · ISO 24444:2019 (in vivo) · ISO 24443:2021 inspired (in vitro) · Solar Light 601-300W · n=5/formulation · Phototypes I–III · p&lt;0.05</p>
+        <p style="font-size:.85rem"><strong>Clinical Efficacy:</strong> Ref. INF.1424.92.10 · GCP (ICH E6) · ISO 9001:2015 · n=60 · Ages 35–55 · 28 days · VISIA-CR + Cutometer MPA 580 + Corneometer CM 825 · Bionos Biotech · p&lt;0.05</p>
+      </div></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ════════ CTA ════════ -->
+<section class="sec sec--d" id="contact" style="text-align:center">
+<div class="ctn" style="max-width:700px">
+  <h2 class="rv" style="color:#fff">Ready to formulate with melanoidins?</h2>
+  <p class="rv" style="color:var(--cream3);margin-bottom:2rem">Request samples, technical documentation, or schedule a formulation support session with our team.</p>
+  <div class="rv">
+    <a href="https://www.kaffebueno.com/get-in-touch" target="_blank" class="btn btn-w" style="margin:.3rem">Book a Meeting</a>
+    <a href="https://www.kaffebueno.com/kaffage" target="_blank" class="btn btn-o" style="color:var(--cream);border-color:var(--cream);margin:.3rem">Visit kaffebueno.com</a>
+  </div>
+</div>
+</section>
+
+<!-- ════════ FOOTER ════════ -->
+<footer class="ft">
+<div class="ctn">
+  <div class="ft__g">
+    <div>
+      <p style="font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:.8rem;margin-bottom:.4rem">Kaffe Bueno ApS</p>
+      <p style="font-size:.82rem;color:var(--brown-200)">Copenhagen, Denmark<br>Unlocking coffee's health potential</p>
+      <p style="font-size:.82rem;margin-top:.8rem"><a href="https://www.kaffebueno.com" target="_blank">kaffebueno.com</a></p>
+    </div>
+    <div>
+      <p style="font-weight:600;font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.4rem">Ingredients</p>
+      <p style="font-size:.82rem"><a href="https://www.kaffebueno.com/kaffage" target="_blank">KAFFAGE®</a></p>
+      <p style="font-size:.82rem"><a href="https://www.kaffebueno.com/kaffoil-coffee-oil-for-personal-care" target="_blank">KAFFOIL®</a></p>
+    </div>
+    <div>
+      <p style="font-weight:600;font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.4rem">Connect</p>
+      <p style="font-size:.82rem"><a href="https://www.kaffebueno.com/get-in-touch" target="_blank">Get in Touch</a></p>
+      <p style="font-size:.82rem"><a href="https://www.linkedin.com/company/kaffe-bueno/" target="_blank">LinkedIn</a></p>
+    </div>
+  </div>
+  <div class="ft__b">
+    <p>© 2026 Kaffe Bueno ApS. All rights reserved. KAFFAGE® is a registered trademark.</p>
+    <img src="assets/bcorp.png" alt="Certified B Corporation">
+  </div>
+</div>
+</footer>
+
+<script>
+// Nav scroll
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('sc',scrollY>50));
+
+// Reveal on scroll
+const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');obs.unobserve(e.target)}})},{threshold:.08,rootMargin:'0px 0px -30px 0px'});
+document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
+
+// Animate bar charts on scroll
+const chartObs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.querySelectorAll('.chart-bar__fill').forEach((b,i)=>{setTimeout(()=>{b.style.height=b.dataset.h},i*80)});chartObs.unobserve(e.target)}})},{threshold:.3});
+document.querySelectorAll('.chart-bars').forEach(c=>chartObs.observe(c));
+
+// Animate survey bars on scroll
+const surveyObs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.querySelectorAll('.survey-bar__fill').forEach((b,i)=>{setTimeout(()=>{b.style.width=b.dataset.w},i*60)});surveyObs.unobserve(e.target)}})},{threshold:.2});
+document.querySelectorAll('.survey-bar__fill').forEach(b=>{const p=b.closest('.g2')||b.closest('.ctn');if(p)surveyObs.observe(p)});
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{e.preventDefault();const t=document.querySelector(a.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth',block:'start'})})});
+
+// Accordion toggle
+function tog(btn){btn.classList.toggle('on');const c=btn.nextElementSibling;c.style.maxHeight=c.style.maxHeight?null:c.scrollHeight+'px'}
+</script>
+</body>
+</html>
