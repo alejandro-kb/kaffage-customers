@@ -104,11 +104,11 @@ a:hover{color:var(--brown-900);border-color:var(--moss)}
 .mt__l{font-size:.72rem;color:var(--brown-300);text-transform:uppercase;letter-spacing:.05em;font-weight:500;margin-top:.15rem}
 
 /* Charts */
-.chart-bars{display:flex;align-items:flex-end;gap:clamp(.5rem,1.5vw,1.2rem);height:240px;padding:1.5rem 0;border-bottom:2px solid var(--brown-50)}
-.chart-bar{flex:1;display:flex;flex-direction:column;align-items:center;gap:.4rem}
-.chart-bar__fill{width:clamp(36px,6vw,65px);min-width:36px;border-radius:3px 3px 0 0;position:relative}
-.chart-bar__fill span{position:absolute;top:-1.4rem;left:50%;transform:translateX(-50%);font-size:.72rem;font-weight:700;white-space:nowrap;color:var(--moss)}
-.chart-bar__label{font-size:.62rem;text-align:center;color:var(--brown-400);line-height:1.2;max-width:75px}
+.chart-bars{display:flex;align-items:flex-end;gap:clamp(.5rem,1.5vw,1.2rem);padding:2rem 0 1rem;border-bottom:2px solid var(--brown-50)}
+.chart-bar{flex:1;display:flex;flex-direction:column;align-items:center;gap:.5rem}
+.chart-bar__fill{width:clamp(36px,6vw,65px);min-width:36px;border-radius:4px 4px 0 0;position:relative}
+.chart-bar__fill span{position:absolute;top:-1.6rem;left:50%;transform:translateX(-50%);font-size:.78rem;font-weight:700;white-space:nowrap;color:var(--moss)}
+.chart-bar__label{font-size:.65rem;text-align:center;color:var(--brown-400);line-height:1.2;max-width:80px}
 .fill-ctrl{background:var(--brown-100)}
 .fill-k{background:var(--moss-light)}
 .fill-kb{background:var(--sunlit-dark)}
@@ -160,8 +160,8 @@ tr.hr td{border-bottom:2px solid var(--sunlit)}
 @media(max-width:600px){.survey-bar{flex-direction:column;align-items:stretch}.survey-bar__label{text-align:left;min-width:auto}}
 
 /* Cert logos */
-.cert-row{display:flex;align-items:center;gap:clamp(2rem,4vw,4rem);flex-wrap:wrap;margin:1.5rem 0;padding:1.5rem 0}
-.cert-row img{height:80px;width:auto;object-fit:contain}
+.cert-row{display:flex;align-items:center;gap:clamp(2.5rem,5vw,5rem);flex-wrap:wrap;margin:2rem 0;padding:1.5rem 0}
+.cert-row img{height:100px;width:auto;object-fit:contain}
 
 /* Image sections */
 .img-banner{width:100%;height:320px;object-fit:cover;margin:2rem 0}
@@ -184,7 +184,7 @@ tr.hr td{border-bottom:2px solid var(--sunlit)}
 .ft a:hover{color:#fff}
 .ft__g{display:grid;grid-template-columns:2fr 1fr 1fr;gap:2rem;margin-bottom:2rem;align-items:start}
 .ft__b{border-top:1px solid rgba(255,255,255,.1);padding-top:1rem;font-size:.7rem;color:rgba(255,255,255,.4);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
-.ft__b img{height:36px;opacity:.6}
+.ft__b img{height:48px;opacity:.8}
 @media(max-width:768px){.ft__g{grid-template-columns:1fr}}
 
 /* Ref list */
@@ -320,11 +320,11 @@ tr.hr td{border-bottom:2px solid var(--sunlit)}
       <h3>In vivo SPF boost — up to +58%</h3>
       <p class="cap">ISO 24444:2019 · n=5/formulation · Phototypes I–III · Helioscience Laboratory · p&lt;0.05</p>
       <div class="chart-bars" id="spf-chart">
-        <div class="chart-bar"><div class="chart-bar__fill fill-ctrl" style="height:63%"><span>15.9</span></div><div class="chart-bar__label">Control</div></div>
-        <div class="chart-bar"><div class="chart-bar__fill fill-k" style="height:73%"><span>18.4</span></div><div class="chart-bar__label">1% KAFFAGE®</div></div>
-        <div class="chart-bar"><div class="chart-bar__fill fill-k" style="height:80%"><span>20.1</span></div><div class="chart-bar__label">2% KAFFAGE®</div></div>
-        <div class="chart-bar"><div class="chart-bar__fill fill-kb" style="height:99%"><span>25.1</span></div><div class="chart-bar__label">1% KAFFAGE-B®</div></div>
-        <div class="chart-bar"><div class="chart-bar__fill fill-kb" style="height:100%"><span>25.3</span></div><div class="chart-bar__label">2% KAFFAGE-B®</div></div>
+        <div class="chart-bar"><div class="chart-bar__fill fill-ctrl" style="height:126px"><span>15.9</span></div><div class="chart-bar__label">Control</div></div>
+        <div class="chart-bar"><div class="chart-bar__fill fill-k" style="height:146px"><span>18.4</span></div><div class="chart-bar__label">1% KAFFAGE®</div></div>
+        <div class="chart-bar"><div class="chart-bar__fill fill-k" style="height:159px"><span>20.1</span></div><div class="chart-bar__label">2% KAFFAGE®</div></div>
+        <div class="chart-bar"><div class="chart-bar__fill fill-kb" style="height:198px"><span>25.1</span></div><div class="chart-bar__label">1% KAFFAGE-B®</div></div>
+        <div class="chart-bar"><div class="chart-bar__fill fill-kb" style="height:200px"><span>25.3</span></div><div class="chart-bar__label">2% KAFFAGE-B®</div></div>
       </div>
       <div class="chart-legend"><span><i style="background:var(--brown-100)"></i> Control (ZnO)</span><span><i style="background:var(--moss-light)"></i> KAFFAGE®</span><span><i style="background:var(--sunlit-dark)"></i> KAFFAGE-B®</span></div>
     </div>
@@ -332,11 +332,11 @@ tr.hr td{border-bottom:2px solid var(--sunlit)}
       <h3>In vitro UVA-PF — up to +38%</h3>
       <p class="cap">PFUVA · Helioscience HelioTest™ 2 · ISO 24443:2021 inspired · n=16/sample</p>
       <div class="chart-bars" id="uva-chart">
-        <div class="chart-bar"><div class="chart-bar__fill fill-ctrl" style="height:72%"><span>10.2</span></div><div class="chart-bar__label">Control</div></div>
-        <div class="chart-bar"><div class="chart-bar__fill fill-k" style="height:77%"><span>10.8</span></div><div class="chart-bar__label">1% KAFFAGE®</div></div>
-        <div class="chart-bar"><div class="chart-bar__fill fill-k" style="height:86%"><span>12.1</span></div><div class="chart-bar__label">2% KAFFAGE®</div></div>
-        <div class="chart-bar"><div class="chart-bar__fill fill-kb" style="height:94%"><span>13.2</span></div><div class="chart-bar__label">1% KAFFAGE-B®</div></div>
-        <div class="chart-bar"><div class="chart-bar__fill fill-kb" style="height:100%"><span>14.1</span></div><div class="chart-bar__label">2% KAFFAGE-B®</div></div>
+        <div class="chart-bar"><div class="chart-bar__fill fill-ctrl" style="height:145px"><span>10.2</span></div><div class="chart-bar__label">Control</div></div>
+        <div class="chart-bar"><div class="chart-bar__fill fill-k" style="height:153px"><span>10.8</span></div><div class="chart-bar__label">1% KAFFAGE®</div></div>
+        <div class="chart-bar"><div class="chart-bar__fill fill-k" style="height:172px"><span>12.1</span></div><div class="chart-bar__label">2% KAFFAGE®</div></div>
+        <div class="chart-bar"><div class="chart-bar__fill fill-kb" style="height:187px"><span>13.2</span></div><div class="chart-bar__label">1% KAFFAGE-B®</div></div>
+        <div class="chart-bar"><div class="chart-bar__fill fill-kb" style="height:200px"><span>14.1</span></div><div class="chart-bar__label">2% KAFFAGE-B®</div></div>
       </div>
       <div class="chart-legend"><span><i style="background:var(--brown-100)"></i> Control</span><span><i style="background:var(--moss-light)"></i> KAFFAGE®</span><span><i style="background:var(--sunlit-dark)"></i> KAFFAGE-B®</span></div>
     </div>
@@ -487,8 +487,8 @@ tr.hr td{border-bottom:2px solid var(--sunlit)}
       <h2>Globally compliant, naturally certified</h2>
       <div class="dv"></div>
       <div class="cert-row">
-        <img src="assets/cosmos.png" alt="ECOCERT COSMOS Approved">
-        <img src="assets/natrue.png" alt="NATRUE Approved">
+        <img src="assets/cosmos_clean.png" alt="ECOCERT COSMOS Approved">
+        <img src="assets/natrue_clean.png" alt="NATRUE Approved">
       </div>
       <div class="tw">
         <table>
@@ -588,7 +588,7 @@ tr.hr td{border-bottom:2px solid var(--sunlit)}
   </div>
   <div class="ft__b">
     <p>© 2026 Kaffe Bueno ApS. All rights reserved. KAFFAGE® is a registered trademark.</p>
-    <img src="assets/bcorp.png" alt="Certified B Corporation">
+    <img src="assets/bcorp_clean.png" alt="Certified B Corporation">
   </div>
 </div>
 </footer>
